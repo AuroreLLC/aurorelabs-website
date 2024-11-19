@@ -1,0 +1,31 @@
+.title {
+  @apply text-4xl font-bold mb-4 text-gray-900;
+}
+
+.description {
+  @apply text-xl text-center text-gray-600;
+}
+
+.buttonContainer {
+  @apply mt-8 flex gap-4 justify-center;
+}
+
+.button {
+  @apply py-2 px-4 text-lg font-bold rounded transition duration-300 ease-in-out;
+}
+
+.buttonPrimary {
+  @apply bg-blue-500 text-white;
+}
+
+.buttonPrimary:hover {
+  @apply bg-blue-700;
+}
+
+.buttonSecondary {
+  @apply bg-white text-blue-500 border border-blue-500;
+}
+
+.buttonSecondary:hover {
+  @apply bg-gray-100;
+}
