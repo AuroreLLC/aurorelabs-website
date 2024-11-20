@@ -2,7 +2,7 @@ import '@/styles/globals.css';
 import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import FlyonuiScript from '@/Wrapper/FlyionuiScript';
+import PrelineScript from '@/Wrapper/PrelineScript';
 export const metadata = {
   title: 'Aurore',
   description: 'Aurore LLC, 2024',
@@ -23,7 +23,7 @@ export default function RootLayout({ children}){
             <Footer />
           </footer>
         </body>
-        <FlyonuiScript />
+        <PrelineScript/>
       </html>
       )
 }
