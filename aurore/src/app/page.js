@@ -1,10 +1,15 @@
 import Link from "next/link";
 import styles from "@/styles/Home.module.css";
-
+import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 
 const Home = () => (
+
   <div className="container mx-auto" >
+    <HeroSection Title={"Driving Innovation Together"} 
+    Subtitle ={"Transform your business with cutting-edge solutions. At Aurore Labs, we innovate and accelerate technologies aligned with your goals, turning objectives into success."}
+    Paragraph={"Discover how Aurore Labs can unlock new possibilities for your business. Schedule a consultation today and let’s start building your future."}
+    Img = {"Images/Pages/Home/home-Driving_innovation_together_optimized.png"} />
       <main className="p-8 text-center">
         <h1 className={styles.title}>
           Innovative Software Solutions for Your Business
