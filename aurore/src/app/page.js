@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 import ServicesSection from "@/components/ServicesSection";
 
 const Home = () => (
-  <div className="container mx-auto">
+  <div className="container mx-auto" >
       <main className="p-8 text-center">
         <h1 className={styles.title}>
           Innovative Software Solutions for Your Business
