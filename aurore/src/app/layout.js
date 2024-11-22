@@ -16,7 +16,7 @@ export default function RootLayout({ children}){
             <NewNavbar/>
           <main>{children}</main>
           <footer>
-            <Footer />
+            <Footer/>
           </footer>
         </body>
         <PrelineScript/>
