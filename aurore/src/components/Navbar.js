@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link";
 const Navbar = () => {
     return ( 
     <header className="sticky top-4 inset-x-0  flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
@@ -25,11 +26,11 @@ const Navbar = () => {
     
           <div id="navbar-collapse" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
-              <a className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="/intelligent-automation" aria-current="page">Intelligent Automation</a>
-              <a className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="/about">About Us</a>
-              <a className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="#">Partners</a>
-              <a className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="/resources">Resources</a>
-              <a className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="/carrers">Careers</a>
+              <Link className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="/intelligent-automation" aria-current="page">Intelligent Automation</Link>
+              <Link className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="/about">About Us</Link>
+              <Link className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="#">Partners</Link>
+              <Link className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="/resources">Resources</Link>
+              <Link className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="/carrers">Careers</Link>
     
               <div>
                 <a className="group inline-flex items-center gap-x-2 py-2 px-3 bg-blue-600 text-whitefont-medium text-sm text-neutral-800 rounded-full focus:outline-none" href="/contact">
