@@ -33,4 +33,7 @@
 .subtitle {
   @apply font-bold text-xl text-[#7CADF5] text-justify;
 }
+.sectionTitle{
+  @apply font-bold text-4xl text-[#7CADF5] ;
+}
 
