@@ -1,6 +1,26 @@
+import Styles from '../styles/Footer.module.css';
 const Footer = () => (
-    <footer className="bg-gray-800 text-white p-4 text-center">
-        <p>&copy; {new Date().getFullYear()}  Aurore. All rights reserved.</p>
+    <footer className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 bg-">
+        <div className='text-center'>
+            <a className="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="#" aria-label="Preline">
+              <img className="w-28 h-auto" src="/Images/Branding/Logo.png" alt="Preline"/>
+            </a> 
+        </div>
+      <div className="py-6 border-t border-[#7CADF5]">
+        <div className="flex flex-wrap justify-between items-center gap-2">
+          <div>
+            <p className={Styles.text}>
+            &copy; {new Date().getFullYear()}  Aurore. All rights reserved.
+            </p>
+          </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 75 75" fill="none"><circle cx="37.5" cy="37.5" r="37.5" fill="#0076B2"></circle><path d="M18.6427 31.9435H26.7257V57.9509H18.6427V31.9435ZM22.6864 19C23.6135 19 24.5198 19.275 25.2905 19.7901C26.0613 20.3053 26.662 21.0374 27.0165 21.894C27.3711 22.7506 27.4637 23.6931 27.2825 24.6023C27.1013 25.5115 26.6545 26.3466 25.9987 27.0018C25.3428 27.657 24.5073 28.103 23.598 28.2833C22.6886 28.4637 21.7462 28.3702 20.8899 28.0148C20.0337 27.6594 19.3021 27.0581 18.7876 26.2868C18.2732 25.5156 17.9991 24.609 18 23.682C18.0012 22.4398 18.4955 21.249 19.3742 20.371C20.2529 19.4931 21.4443 19 22.6864 19ZM31.7959 31.9435H39.5442V35.5141H39.6513C40.7314 33.4699 43.3647 31.3141 47.2969 31.3141C55.4825 31.2963 57 36.6835 57 43.6685V57.9509H48.917V45.2976C48.917 42.2848 48.8635 38.4063 44.7171 38.4063C40.5707 38.4063 39.8655 41.6912 39.8655 45.1012V57.9509H31.7959V31.9435Z" fill="white"></path></svg>
+        </div>
+          <p className={Styles.text}>
+            Privacy Policy
+          </p>
+        </div>
+      </div>
     </footer>
 );
 
