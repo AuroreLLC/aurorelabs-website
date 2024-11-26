@@ -1,0 +1,9 @@
+.subtitle {
+    @apply text-lg font-bold text-[#7CADF5] text-justify;
+  }
+.description {
+    @apply mt-3 text-base text-[#7CADF5] text-justify ;
+  }
+.cardSubtitle {
+  @apply text-lg font-bold text-white text-justify;
+}
