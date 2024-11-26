@@ -1,0 +1,15 @@
+.title {
+    @apply font-bold text-white block sm:text-4xl lg:text-5xl lg:leading-tight  ;
+  }
+
+.description {
+    @apply mt-3 text-lg text-white text-justify ;
+  }
+
+.subtitle {
+    @apply font-bold text-xl text-[#7CADF5] text-justify;
+  }
+  
+.subtitleText {
+    @apply font-bold text-[#7CADF5] ;
+  }
