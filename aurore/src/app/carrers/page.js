@@ -1,5 +1,6 @@
 import styles from "@/styles/Carrers.module.css";
 import SectionWithIcon from "@/components/SectionWithIcon";
+import { mainData, data } from "@/content/carrers"
 
 
 const Carrers = () => (

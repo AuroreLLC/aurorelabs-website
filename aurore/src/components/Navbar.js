@@ -83,7 +83,7 @@ const Navbar = () => {
             </Link>
             <Link
               className="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300"
-              href="#"
+              href="/partners"
             >
               Partners
             </Link>

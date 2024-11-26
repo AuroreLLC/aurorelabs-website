@@ -1,10 +1,11 @@
-const mainData = {
+export const mainData = {
     title: "Innovate with us",
     description:
       "At Aurore, we believe in shaping the future through innovation, collaboration, and excellence. We are constantly evolving, and we’re always on the lookout for passionate individuals ready to grow with us.",
     subtitle: "Why Join Us?",
   };
-  const data = [
+
+export const data = [
     {
       key: 1,
       subtitle: "Innovation at the Core",
