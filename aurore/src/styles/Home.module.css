@@ -1,9 +1,9 @@
 .title {
-  @apply text-4xl font-bold mb-4 text-gray-900;
+  @apply font-bold text-white block sm:text-4xl lg:text-5xl lg:leading-tight  ;
 }
 
 .description {
-  @apply text-xl text-center text-gray-600;
+  @apply mt-3 text-lg text-white text-justify ;
 }
 
 .buttonContainer {
@@ -29,3 +29,11 @@
 .buttonSecondary:hover {
   @apply bg-gray-100;
 }
+
+.subtitle {
+  @apply font-bold text-xl text-[#7CADF5] text-justify;
+}
+.sectionTitle{
+  @apply font-bold text-4xl text-[#7CADF5] ;
+}
+

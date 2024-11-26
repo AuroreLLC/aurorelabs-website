@@ -4,7 +4,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/flyonui/dist/js/*.js",
+    './node_modules/preline/preline.js',
   ],
   theme: {
     extend: {
@@ -16,7 +16,6 @@ module.exports = {
     },
   },
   plugins: [
-    require("flyonui"),
-    require("flyonui/plugin")
+    require('preline/plugin'),
   ],
 };
