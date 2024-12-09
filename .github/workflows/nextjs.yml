@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Change to project directory
-        run: cd auore
+        run: cd ./auore
       - name: Detect package manager
         id: detect-package-manager
         run: |
