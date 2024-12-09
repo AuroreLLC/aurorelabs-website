@@ -31,12 +31,12 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "auore/yarn.lock" ]; then
+          if [ -f "aurore/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
             exit 0
-          elif [ -f "auore/package.json" ]; then
+          elif [ -f "aurore/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
@@ -61,23 +61,23 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            auore/.next/cache
+            aurore/.next/cache
           # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('auore/**/package-lock.json', 'auore/**/yarn.lock') }}-${{ hashFiles('auore/**.[jt]s', 'auore/**.[jt]sx') }}
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('aurore/**/package-lock.json', 'aurore/**/yarn.lock') }}-${{ hashFiles('aurore/**.[jt]s', 'aurore/**.[jt]sx') }}
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('auore/**/package-lock.json', 'auore/**/yarn.lock') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('aurore/**/package-lock.json', 'aurore/**/yarn.lock') }}-
       
       - name: Install dependencies
-        run: cd auore && ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: cd aurore && ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       
       - name: Build with Next.js
-        run: cd auore && ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: cd aurore && ${{ steps.detect-package-manager.outputs.runner }} next build
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: auore/out
+          path: aurore/out
 
   # Deployment job
   deploy:
