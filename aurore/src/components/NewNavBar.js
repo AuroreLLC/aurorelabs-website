@@ -1,10 +1,10 @@
 import styles from "@/styles/Home.module.css";
 const NewNavbar = () => (
-    <header className="flex flex-wrap px-4 sm:justify-start sm:flex-nowrap max-w-[100rem] bg-white text-sm py-3 dark:bg-neutral-800">
+    <header className="flex flex-wrap px-8 sm:justify-start sm:flex-nowrap  w-full bg-white text-sm py-3 dark:bg-neutral-800">
         <nav className=" w-full mx-auto flex flex-wrap basis-full items-center justify-between border-b border-[#6B6B70] ">
             <div>
                 <a className="flex-none focus:outline-none focus:opacity-80" href="#" aria-label="Logo">
-                    <img className="w-28 h-auto" src="/Images/Branding/BlueLogo.png" alt="Logo"/>
+                    <img className="w-[10rem] h-auto" src="/Images/Branding/BlueLogo.png" alt="Logo"/>
                 </a>
             </div>
             <div className="sm:order-3 flex items-center gap-x-2">

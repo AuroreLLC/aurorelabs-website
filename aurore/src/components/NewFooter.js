@@ -1,6 +1,6 @@
 import DarkModeButton from "./DarkModeButton";
 const NewFooter = () =>(
-    <footer className="mt-auto w-full max-w-[100rem] py-5 px-4 sm:px-6 lg:px-8 mx-auto bg-white">
+    <footer className="mt-auto w-full py-5 px-4 sm:px-6 lg:px-8 mx-auto bg-white">
       <div className="pt-5 border-t border-gray-200 dark:border-neutral-700">
         <div className="sm:flex sm:justify-between sm:items-center">
           <div className="flex flex-wrap items-center gap-3">
