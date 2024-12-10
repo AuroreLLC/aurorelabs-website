@@ -1,29 +1,14 @@
+
 .title {
-  @apply font-bold text-white block sm:text-4xl lg:text-5xl lg:leading-tight  ;
+  @apply text-4xl sm:text-4xl  md:text-6xl font-bold font-sans text-primary lg:text-9xl lg:leading-tight lg:text-left;
 }
 
-.description {
-  @apply mt-3 text-lg text-white text-justify ;
+.paragraph {
+  @apply inline text-primary text-base font-sans block sm:text-sm lg:text-base lg:leading-tight;
 }
 
-.buttonContainer {
-  @apply mt-8 flex gap-4 justify-center;
-}
-
-.button {
-  @apply py-2 px-4 text-lg font-bold rounded transition duration-300 ease-in-out;
-}
-
-.buttonPrimary {
-  @apply bg-blue-500 text-white;
-}
-
-.buttonPrimary:hover {
-  @apply bg-blue-700;
-}
-
-.buttonSecondary {
-  @apply bg-white text-blue-500 border border-blue-500;
+.navbarLinks {
+  @apply font-medium  font-sans text-lg text-primary hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500;
 }
 
 .buttonSecondary:hover {
@@ -33,7 +18,14 @@
 .subtitle {
   @apply font-bold text-xl text-[#7CADF5] text-justify;
 }
-.sectionTitle{
-  @apply font-bold text-4xl text-[#7CADF5] ;
+.sectionTitle {
+  @apply font-bold text-4xl text-[#7CADF5];
+}
+
+.footerText {
+  @apply inline-flex sm:text-xs  text-primary hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200;
+}
+.primaryButton{
+  @apply py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-primary text-white shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700
 }
 
