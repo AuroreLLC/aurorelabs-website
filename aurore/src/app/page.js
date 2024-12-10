@@ -1,63 +1,47 @@
 import Link from "next/link";
 import styles from "@/styles/Home.module.css";
-import ServicesSection from "@/components/ServicesSection";
 import { FirstSection } from "@/content/home";
 import { SecondSection } from "@/content/home";
 
 const Home = () => (
-  <div className="container mx-auto">
-    <main className="p-8 text-center">
-      <div className="mx-auto px-4 grid rows-3 gap-10 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-          <div>
+  <div className="container max-w-[100rem] h-screen">
+    <main className="px-4 py-4 pt-2 pb-2 text-center">
+      <div className="mx-auto">
+        <div className="grid md:grid-cols-2 grid-cols-2 grid-rows-2  gap-2 md:gap-8 xl:gap-1 md:items-center">
+          <div className="flex">
             <h1 className={styles.title}>{FirstSection.title}</h1>
-            <h2 className={styles.subtitle}>{FirstSection.subtitle}</h2>
-            <p className={styles.description}>{FirstSection.paragraph}</p>
-            <div className="mt-7  w-full">
-              <Link
-                className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                href={FirstSection.buttonRef}
-              >
-                Get started
-              </Link>
+          </div>
+          <div className="flex-col">
+            <div className="mx-auto">
+              <img src="/Images/Pages/Home/Microscope.png" className="w-auto h-[20rem]" alt="image"/>
+            </div>
+            <div>
+              <p className=" inline font-bold text-[#003865] text-base">A Research Update</p>
+              <p className="inline text-[#003865] text-base"> AI, LLMs, Digital Agents and Innovation</p>
             </div>
           </div>
-          <div className="relative ms-4">
-            <img
-              className="w-full rounded-md"
-              src={FirstSection.img}
-              alt="Hero Image"
-            />
+          <div className="flex-col">
+            <div className="mx-auto">
+              <img src="/Images/Pages/Home/Microscope.png" className="w-auto h-[20rem]" alt="image"/>
+            </div>
+            <div>
+              <p className=" inline font-bold text-[#003865] text-base">A Research Update</p>
+              <p className="inline text-[#003865] text-base"> AI, LLMs, Digital Agents and Innovation</p>
+            </div>
           </div>
-        </div>
-        <div className="justify-items-center text-center">
-          <h2 className={styles.sectionTitle}> Intelligent Automations</h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-          <div className="relative ms-4">
-            <img
-              className="w-full rounded-md"
-              src={SecondSection.img}
-              alt="Hero Image"
-            />
-          </div>
-          <div>
-            <h1 className={styles.title}>{SecondSection.title}</h1>
-            <h2 className={styles.subtitle}>{SecondSection.subtitle}</h2>
-            <p className={styles.description}>{SecondSection.paragraph}</p>
-            <div className="mt-7  w-full">
-              <Link
-                className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                href={FirstSection.buttonRef}
-              >
-                Learn More
-              </Link>
+          <div className="flex-col">
+            <div className="mx-auto">
+              <img src="/Images/Pages/Home/Microscope.png" className="w-auto h-[20rem]" alt="image"/>
+            </div>
+            <div>
+              <p className=" inline font-bold text-[#003865] text-base">A Research Update</p>
+              <p className="inline text-[#003865] text-base"> AI, LLMs, Digital Agents and Innovation</p>
             </div>
           </div>
         </div>
+
       </div>
     </main>
-    <ServicesSection />
   </div>
 );
 

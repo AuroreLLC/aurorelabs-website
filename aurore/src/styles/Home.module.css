@@ -1,5 +1,5 @@
 .title {
-  @apply font-bold text-white block sm:text-4xl lg:text-5xl lg:leading-tight  ;
+  @apply font-bold font-sans text-[#003865] block sm:text-4xl lg:text-8xl lg:leading-tight text-left  ;
 }
 
 .description {
@@ -35,5 +35,9 @@
 }
 .sectionTitle{
   @apply font-bold text-4xl text-[#7CADF5] ;
+}
+
+.primaryColor{
+  @apply text-[#003865];
 }
 
