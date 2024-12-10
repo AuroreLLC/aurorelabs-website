@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base{
+    h1 {
+      @apply sm:text-9xl font-bold font-sans text-primary lg:text-9xl lg:leading-tight text-left;
+    }
+  }
